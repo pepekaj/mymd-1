@@ -170,7 +170,7 @@ let levelling = require('../lib/levelling')
  *Official Bot By @${'0'.split('@')[0]}* 
  *Powered By @${'6281251549899'.split('@')[0]}*`
     let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
-     let pp = await conn.profilePictureUrl(who, 'image').catch((_) => "https://telegra.ph/file/24fa902ead26340f3df2c.png")
+     let pp = await conn.profilePictureUrl(who, 'image').catch((_) => "https://telegra.ph/file/c4c3f666673ad816d4813.jpg")
      let package = JSON.parse(await fs.promises.readFile(path.join(__dirname, '../package.json')).catch(_ => '{}')) 
      let { exp, limit, age, money, level, role, registered } = global.db.data.users[m.sender] 
      let { min, xp, max } = levelling.xpRange(level, global.multiplier) 
